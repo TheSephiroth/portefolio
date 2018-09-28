@@ -1,5 +1,5 @@
-$primary-color:#444;
-$secondary-color: #222;
+$primary-color:#014;
+$secondary-color: #85C9FFFF;
 $show-home-image:true;
 $home-image:url(../img/Background.jpeg);
 $background-opacity:0.4;
@@ -35,5 +35,32 @@ $background-opacity:0.4;
 			}
 		}
 
+	}
+}
+
+// MEDIA QUERY MIXINS
+//SMALL
+@mixin mediaS {
+	@media screen and (max-width: 500px){
+		@content;
+	}
+}
+//MEDIUM
+@mixin mediaM {
+	@media screen and (max-width: 768px){
+		@content;
+	}
+}
+// Large
+@mixin mediaL {
+	@media screen and (min-width:769px)and (max-width: 1170px){
+		@content;
+	}
+}
+// Extra Large
+
+@mixin mediaXL {
+	@media screen and (min-width: 1171px){
+		@content;
 	}
 }

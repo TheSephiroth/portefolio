@@ -44,14 +44,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #2d2d2d;
+    background: #000616;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #014;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -61,14 +61,14 @@
       height: 250px;
       background: url("../img/rportrait.jpg");
       border-radius: 50%;
-      border: solid 3px #222; }
+      border: solid 3px #85C9FFFF; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #222; }
+      color: #85C9FFFF; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -80,7 +80,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #222;
+      color: #85C9FFFF;
       transition: all 0.5s ease-out; }
 
 .nav-item:nth-child(1) {
@@ -95,11 +95,39 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 200px;
+      height: 200px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #014;
   color: #ddd;
   height: 100%;
   margin: 0;
@@ -116,7 +144,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.4);
+      background: rgba(0, 17, 68, 0.4);
       z-index: -1; }
 
 h1, h2, h3 {
@@ -129,7 +157,7 @@ h1, h2, h3 {
     padding: 0.2rem 1rem;
     color: #ddd;
     font-weight: 300;
-    background: rgba(73, 73, 73, 0.1); }
+    background: rgba(0, 20, 78, 0.1); }
 
 a {
   color: #ddd;
@@ -141,7 +169,7 @@ header {
   width: 200%; }
 
 .text-secondary {
-  color: #222; }
+  color: #85C9FFFF; }
 
 main {
   padding: 4rem;
@@ -152,7 +180,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #222;
+        color: #85C9FFFF;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
