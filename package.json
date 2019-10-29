@@ -1,7 +1,7 @@
 {
   "name": "portefolio",
   "version": "1.0.0",
-  "description": "Portefolio for InMotion",
+  "description": "Portefolio for Igor de Carvalho",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
